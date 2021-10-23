@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Band name generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Band Name Generator</h1>
+      <label for="city" required>What's the name of the city you grew up?</label
+      ><br />
+      <input type="text" id="city" />
+      <label for="pet" required>What's your pet's name?</label><br />
+      <input type="text" id="pet" />
+      <button id="btn" onclick="generateName()">CLICK TO GENERATE</button>
+      <p id="band-text"></p>
+      <p id="band-name"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
