@@ -12,12 +12,10 @@ body {
   background-color: var(--pale-purple);
   background-image: url("images/band.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  padding-top: 1em;
-  padding-bottom: 9em;
-  overflow: hidden;
+  min-height: 100vh;
 }
 
 img {
@@ -67,11 +65,10 @@ label {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
 }
 
 h1 {
-  margin-bottom: 4em;
+  margin: 0.1em 0 4em;
 }
 
 input {
