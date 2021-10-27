@@ -41,8 +41,7 @@ h1 {
 
 #city,
 #pet {
-  font-size: 2.8rem;
-  text-align: center;
+  font-size: 2.5rem;
 }
 
 label {
@@ -72,9 +71,10 @@ h1 {
 }
 
 input {
-  margin-bottom: 0.5em;
-  border: none;
+  border: 3px solid var(--yellow);
   border-radius: 10px;
+  margin-bottom: 0.5em;
+  padding: 0.2em 0.5em;
 }
 
 /* Button */
@@ -85,9 +85,15 @@ button {
   letter-spacing: 5px;
   background: var(--yellow);
   color: var(--dark-gray);
-  padding: 0.4em 1.25em;
+  padding: 0.4em 1em;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   margin: 1em 0;
+}
+
+button:hover,
+button:focus {
+  font-size: 2.3rem;
+  border: 1px solid var(--dark-gray);
 }

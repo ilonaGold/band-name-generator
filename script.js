@@ -1,10 +1,17 @@
-let cityName = document.getElementById("city");
-let petName = document.getElementById("pet"); 
-let bandText = document.getElementById("band-text");
-let bandName = document.getElementById("band-name");
+const city = document.getElementById("city");
+const pet = document.getElementById("pet"); 
+const bandText = document.getElementById("band-text");
+const bandName = document.getElementById("band-name");
+const button = document.getElementById("btn");
+const inputEl = document.getElementsByClassName("input-el");
 
-function generateName() {
+
+button.addEventListener("click", function generateName() {
     bandText.textContent = "Your band name could be";
-    bandName.textContent =  cityName.value + " " + petName.value;
-}
+    bandName.textContent =  city.value + " " + pet.value;
+    for(let i = 0; i < inputEl.length; i++) {
+        inputEl[i].value = "";
+    }
+})
+
 
